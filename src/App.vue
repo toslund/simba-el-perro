@@ -39,6 +39,11 @@
                         <li><a>Made with&nbsp;<i class="fas fa-paw"></i>&nbsp;in California</a></li>
                     </ul>
                 </div>
+                <div class="tabs is-centered">
+                    <ul>
+                        <li>Demo app built with Vue.js by <a href="https://timoslund.com">timoslund.com</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
 

@@ -1,5 +1,10 @@
 # simba-el-perro
 
+simba-el-perro is a simple but sleek personal site built in Vue.js using
+the WordPress API as a headless CMS.
+
+Vue the live example at www.simba.dog
+
 ## Project setup
 ```
 npm install

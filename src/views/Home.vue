@@ -14,7 +14,7 @@
                 I eat cat shit and beg for walks.
             </h2>
              <p class="has-text-centered hipster-button">
-                <a class="button is-medium is-grey-ter is-outlined" href="http://www.github.com/toslund">
+                <a class="button is-medium is-grey-ter is-outlined" href="https://github.com/toslund/simba-el-perro">
 					Github
 				</a>
             </p>
