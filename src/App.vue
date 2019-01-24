@@ -1,29 +1,61 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <section id="app" class="hero is-fullheight is-default is-bold">
+    <div class="hero-head">
+    <nav id="main-nav" class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <span class="navbar-item">
+              Simba El Perro
+          </span>
+          <span data-target="navbarMenu" class="navbar-burger burger" v-on:click="toggleburger" v-bind:class="{'is-active': burgeractive}">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu" v-bind:class="{ 'is-active': burgeractive }">
+          <div class="navbar-end">
+            <span class="navbar-item">
+              <router-link to="/">Home</router-link>
+            </span>
+            <span class="navbar-item">
+              <router-link to="/about">About</router-link>
+            </span>
+            <span class="navbar-item">
+              <router-link to="/blog">Blog</router-link>
+            </span>
+        </div>
+      </div>
     </div>
-    <router-view/>
+  </nav>
   </div>
+  <div class="hero-body">
+        <router-view/>
+  </div>
+  <div class="hero-foot">
+            <div class="container">
+                <div class="tabs is-centered">
+                    <ul>
+                        <li><a>Made with&nbsp;<i class="fas fa-paw"></i>&nbsp;in California</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+  </section>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
+<script>
+export default {
+  name: 'app',
+    data() {
+    return {
+        burgeractive: false
+  }},
+    methods: {
+    toggleburger: function() {
+      this.burgeractive = !this.burgeractive;
     }
-  }
+  },
 }
-</style>
+</script>
